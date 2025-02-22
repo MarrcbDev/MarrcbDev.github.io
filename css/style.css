@@ -65,3 +65,7 @@ table a:hover{
   color: rgb(6,147,6);
   border: 2px solid rgb(6,147,6);
 }
+
+.filtro{
+    display: none;
+}
