@@ -50,6 +50,10 @@ table{
     border-collapse: collapse;
 }
 
+#table-android{
+  margin-bottom: 20px;
+}
+
 
 
 /* Bordes en modo oscuro */
