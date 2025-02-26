@@ -9,3 +9,18 @@ document.addEventListener("keyup", e=>{
     }
 })
     
+    
+const texto = "Apps y Juegos Gratis";
+let i = 0;
+
+function escribir(){
+  if(i<texto.length){
+    document.getElementById('escribir').textContent = texto.slice(0, i+1) + "|";
+    i++;
+    setTimeout(escribir, 100);
+  } else {
+    document.getElementById("escribir").textContent = texto;
+  }
+}
+
+setTimeout(escribir, 500);
