@@ -24,3 +24,7 @@ function escribir(){
 }
 
 setTimeout(escribir, 500);
+
+
+  
+        
