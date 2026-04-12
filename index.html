@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MarrDev — Recomendaciones</title>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;800&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <div class="orb2"></div>
@@ -25,250 +25,425 @@
   </div>
 
   <div class="stats-bar">
-    Mostrando <span id="count">19</span> entradas
+    Mostrando <span id="count">21</span> entradas
   </div>
 
   <div class="grid" id="grid">
 
+    <!-- Hollow Knight — Steam app 1145360 -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-obb">APK</div>
-      <div class="card-top">
-        <div class="card-name">Hollow Knight</div>
-        <div class="version-badge">v1.0</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/capsule_231x87.jpg" alt="Hollow Knight" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🎮</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Hollow Knight</div>
+            <div class="version-badge">v1.0</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-obb">APK</div></div>
       <a class="download-btn" href="https://drive.google.com/file/d/1vww1qMosNLwsb0gFqDdQc23Bsh7NBXFN/view?usp=drivesdk" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Harmony Music — GitHub -->
     <div class="card" data-cat="app">
-      <div class="card-top">
-        <div class="card-name">Harmony Music</div>
-        <div class="version-badge">v1.11.2</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://raw.githubusercontent.com/anandnet/Harmony-Music/main/assets/icons/icon.png" alt="Harmony Music"/>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Harmony Music</div>
+            <div class="version-badge">v1.11.2</div>
+          </div>
+          <div class="platform">@anandnet / Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
-      <a class="download-btn" href="https://github.com/anandnet/Harmony-Music/releases/download/v1.11.2/harmonymusic-1.11.2.apk" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-        Descargar APK
-      </a>
+      <div class="tags"><div class="tag tag-git">GitHub</div></div>
+      <div class="btn-row">
+        <a class="download-btn" href="https://github.com/anandnet/Harmony-Music/releases/download/v1.11.2/harmonymusic-1.11.2.apk" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          Descargar APK
+        </a>
+        <a class="download-btn" href="https://github.com/anandnet/Harmony-Music" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Ver Repo
+        </a>
+      </div>
     </div>
 
+    <!-- CupHead — Steam app 268910 -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">CupHead</div>
-        <div class="version-badge">v1.0</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://cdn.cloudflare.steamstatic.com/steam/apps/268910/capsule_231x87.jpg" alt="CupHead" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🎮</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">CupHead</div>
+            <div class="version-badge">v1.0</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
       <a class="download-btn" href="https://www.mediafire.com/file/jjpp0fadpp0rgru/cuphead_fusion_beta+2.0.1.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Balatro — Play Store com.playstack.balatro.android -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">Balatro</div>
-        <div class="version-badge">v0.4</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/4TBtBLMUbFBJaJXFGQNBgg2zhEfGXELK_pVIkBwnp_TjS2DW7VrPE-VJPRsBwTfGNw=s256" alt="Balatro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🃏</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Balatro</div>
+            <div class="version-badge">v0.4</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
       <a class="download-btn" href="https://www.mediafire.com/file/axhc3clldr8rv4a/BM_MarrDev.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Animal Crossing Pocket Camp — Play Store com.nintendo.zaga -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">Animal Crossing Pocket Camp Complete</div>
-        <div class="version-badge">v7.1.1</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/4i_huFDISsKlgrnhXNHSmHD4QGHqSS0ORmhC3x0P0NkBkNVxzBYVAuCm5MbfRJioVw=s256" alt="Animal Crossing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🏝️</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Animal Crossing PC</div>
+            <div class="version-badge">v7.1.1</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
       <a class="download-btn" href="https://www.mediafire.com/file/6wnh1n8cl8ga0r6/ACPCC_MarrDev.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Shadow Fight 2 — Play Store com.nekki.shadowfight -->
     <div class="card" data-cat="juego mod">
-      <div class="tag tag-mod">MOD</div>
-      <div class="card-top">
-        <div class="card-name">Shadow Fight 2</div>
-        <div class="version-badge">v2.40.5</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/4TGjn7o3V1OVkN_PcFSLh5yfXh8zfFLe6bchPy17XnDRmQkTZDzoxOoZj_tFuvBTYA=s256" alt="Shadow Fight 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">⚔️</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Shadow Fight 2</div>
+            <div class="version-badge">v2.40.5</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-mod">MOD</div></div>
       <a class="download-btn" href="https://www.mediafire.com/file/xkw1pqspj9fey3z/SF2_MOD_MarrDEV.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK (MOD)
       </a>
     </div>
 
+    <!-- Little Nightmares — Steam app 860510 (mobile) -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">Little Nightmares</div>
-        <div class="version-badge">v141</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://cdn.cloudflare.steamstatic.com/steam/apps/860510/capsule_231x87.jpg" alt="Little Nightmares" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">👁️</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Little Nightmares</div>
+            <div class="version-badge">v141</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
       <a class="download-btn" href="https://www.mediafire.com/file/54xa0rinfsy569c/Little+Nightmares+-+141+-+APK+-+VPR.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Into The Dead 2 — Play Store com.pikpok.tf2 -->
     <div class="card" data-cat="juego mod">
-      <div class="tag tag-mod">MOD</div>
-      <div class="card-top">
-        <div class="card-name">Into The Dead 2</div>
-        <div class="version-badge">v2.8.8</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/m5zh9V8lhpK-IzbI5GfyoLXxqbCgBjFXlFGCgXLf7MsOt8C5kl9K4mIAYKqUkh3O8Q=s256" alt="Into The Dead 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🧟</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Into The Dead 2</div>
+            <div class="version-badge">v2.8.8</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-mod">MOD</div></div>
       <a class="download-btn" href="https://www.mediafire.com/file/9ktgns6w064sbv0/into-the-dead-mod_2.8.8-androidzone2.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK (MOD)
       </a>
     </div>
 
+    <!-- Suzy Cube — Play Store com.noodlecake.suzycube -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-obb">APK + OBB</div>
-      <div class="card-top">
-        <div class="card-name">Suzy Cube</div>
-        <div class="version-badge">v1.0.12</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/5WjMQqLVOBLBqeHCB5nqXP5STKXLQ3bDkc6NNDHFTaekGKAbWpI4ZNZQoFDqgRFlPA=s256" alt="Suzy Cube" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🧊</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Suzy Cube</div>
+            <div class="version-badge">v1.0.12</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-obb">APK + OBB</div></div>
       <a class="download-btn" href="https://www.mediafire.com/file/1jdwqgjzptxlwfi/Suzy_Cube+_APK+OBB_MarrDev.zip/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK + OBB
       </a>
     </div>
 
+    <!-- GTA San Andreas — Play Store com.rockstargames.gtasa -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-obb">APK + OBB</div>
-      <div class="card-top">
-        <div class="card-name">GTA: San Andreas</div>
-        <div class="version-badge">v2.11.264</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/F6_q3uyoxdorG29xYF-RnqcUK8XYcSjhPnH-c2HZMpFJ5_S-pLJBGJPEegWvGS5AhA=s256" alt="GTA San Andreas" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🚗</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">GTA: San Andreas</div>
+            <div class="version-badge">v2.11.264</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-obb">APK + OBB</div></div>
       <a class="download-btn" href="https://www.mediafire.com/file/4lsxps2kpjr2qsh/Gta+sa.zip/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK + OBB
       </a>
     </div>
 
+    <!-- Zombotron — Play Store ru.antkarlov.zombotron -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-play">Play Store</div>
-      <div class="card-top">
-        <div class="card-name">Zombotron Re-Boot</div>
-        <div class="version-badge">v1.4.0</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/fqc09Kz6BSAH1cVjBjKJmTd8YGJrgfSIi3L-cg1T7zMcRaqJNKx1RdMTKNjFHZRuQ=s256" alt="Zombotron" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🤖</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Zombotron Re-Boot</div>
+            <div class="version-badge">v1.4.0</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-play">Play Store</div></div>
       <a class="download-btn" href="https://play.google.com/store/apps/details?id=ru.antkarlov.zombotron" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APP
       </a>
     </div>
 
+    <!-- TapTap -->
     <div class="card" data-cat="app">
-      <div class="card-top">
-        <div class="card-name">TapTap</div>
-        <div class="version-badge">v3.50.1</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/H5x3rGDMnPrTChVg1bALBtEVMFHj8TaZL3TJo3qkN8wLWjPj_SdkFm_Y4lBT9pqaFQ=s256" alt="TapTap" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🕹️</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">TapTap</div>
+            <div class="version-badge">v3.50.1</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
       <a class="download-btn" href="https://www.mediafire.com/file/on7s7g5k7oy3x1g/TapTap_Global_3.50.1-full.100000_organic.apk/file" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APK
       </a>
     </div>
 
+    <!-- Project: Tank — TapTap -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">Project: Tank</div>
-        <div class="version-badge">v2.0</div>
+      <div class="card-header">
+        <div class="card-icon-placeholder">🪖</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Project: Tank</div>
+            <div class="version-badge">v2.0</div>
+          </div>
+          <div class="platform">Android — TapTap</div>
+        </div>
       </div>
-      <div class="platform">Android — TapTap</div>
       <a class="download-btn" href="https://m.taptap.io/app/project-tank-33792303?share_id=fecbee1ed170" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar (TapTap)
       </a>
     </div>
 
+    <!-- Survivors of Zombie World — TapTap -->
     <div class="card" data-cat="juego">
-      <div class="card-top">
-        <div class="card-name">Survivors Of The Zombie World</div>
-        <div class="version-badge">v6.0</div>
+      <div class="card-header">
+        <div class="card-icon-placeholder">🧟</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Survivors of Zombie World</div>
+            <div class="version-badge">v6.0</div>
+          </div>
+          <div class="platform">Android — TapTap</div>
+        </div>
       </div>
-      <div class="platform">Android — TapTap</div>
       <a class="download-btn" href="https://m.taptap.io/app/survivors-of-the-zombie-world-33585685?share_id=c054bcdd13f0" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar (TapTap)
       </a>
     </div>
 
+    <!-- Valorant Mobile — TapTap -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-premium">Pre-registro</div>
-      <div class="card-top">
-        <div class="card-name">Valorant Mobile</div>
-        <div class="version-badge">Próximamente</div>
+      <div class="card-header">
+        <div class="card-icon-placeholder">🔫</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Valorant Mobile</div>
+            <div class="version-badge">Próximamente</div>
+          </div>
+          <div class="platform">Android — TapTap</div>
+        </div>
       </div>
-      <div class="platform">Android — TapTap</div>
+      <div class="tags"><div class="tag tag-premium">Pre-registro</div></div>
       <a class="download-btn" href="https://m.taptap.io/app/valorant-mobile-176944?share_id=bff89df1136c" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         Pre-registrarse
       </a>
     </div>
 
+    <!-- Dream Road — Play Store com.TenebryFox.DreamRoadMultiplayer -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-play">Play Store</div>
-      <div class="card-top">
-        <div class="card-name">Dream Road: Online</div>
-        <div class="version-badge">v1.1.6</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/R3i2vkBo7HVDotRQH-EYWG3mIPXRloMVdkKAlQFxnvOhCLcYibzAO6kGawtT8Sfp0g=s256" alt="Dream Road" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🚦</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Dream Road: Online</div>
+            <div class="version-badge">v1.1.6</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-play">Play Store</div></div>
       <a class="download-btn" href="https://play.google.com/store/apps/details?id=com.TenebryFox.DreamRoadMultiplayer" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APP
       </a>
     </div>
 
+    <!-- Last Exit — Play Store com.FenrirForge.LastExit -->
     <div class="card" data-cat="juego">
-      <div class="tag tag-play">Play Store</div>
-      <div class="card-top">
-        <div class="card-name">Last Exit: Horror Game</div>
-        <div class="version-badge">v1.6</div>
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/TCv7P_JhO8_LrmjEuqgxh0kU5eST3dpWtQMLYeKjN1kLkr4wFz1D6CpL4bSqarxqF8U=s256" alt="Last Exit" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">😱</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Last Exit: Horror Game</div>
+            <div class="version-badge">v1.6</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-play">Play Store</div></div>
       <a class="download-btn" href="https://play.google.com/store/apps/details?id=com.FenrirForge.LastExit" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APP
       </a>
     </div>
 
-    <div class="card" data-cat="app">
-  <div class="tag tag-git">GitHub</div>
-  <div class="card-top">
-    <div class="card-name">PixelPlayer</div>
-    <div class="version-badge">v0.6.0-beta</div>
-  </div>
-  <div class="platform">@theovilardo / Android</div>
-  <div class="btn-row">
-    <a class="download-btn" href="https://release-assets.githubusercontent.com/github-production-release-asset/987110251/7c20b75d-e7de-4b50-9f1b-478b014f99b4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-12T14%3A28%3A21Z&rscd=attachment%3B+filename%3Dapp-arm64-v8a-release.apk&rsct=application%2Fvnd.android.package-archive&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-12T13%3A28%3A15Z&ske=2026-04-12T14%3A28%3A21Z&sks=b&skv=2018-11-09&sig=DvyquOAH%2BAb8eBy0thkY4ijPnZMML5ZKNkYtqj0ZsO4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NjAwMjI5NSwibmJmIjoxNzc2MDAwNDk1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.K11izAjjgFGK-bdT7Q96AkiT1sVRUcekmMQ98dxz_LQ&response-content-disposition=attachment%3B%20filename%3Dapp-arm64-v8a-release.apk&response-content-type=application%2Fvnd.android.package-archive" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      Descargar APK
-    </a>
-    <a class="download-btn" href="https://github.com/theovilardo/PixelPlayer" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      Ver Proyecto
-    </a>
-  </div>
-</div>
-
-    <div class="card" data-cat="app">
-      <div class="tag tag-play">Play Store</div>
-      <div class="card-top">
-        <div class="card-name">Movidex</div>
-        <div class="version-badge">v1.6</div>
+    <!-- Spotify — Play Store com.spotify.music -->
+    <div class="card" data-cat="app mod">
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=s256" alt="Spotify" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🎵</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Spotify Premium</div>
+            <div class="version-badge">v9.0.18.604</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
       </div>
-      <div class="platform">Android</div>
+      <div class="tags"><div class="tag tag-premium">PREMIUM</div></div>
+      <a class="download-btn" href="https://www.mediafire.com/file/ljo53r37a3t4rhx?dkey=3vxx8u5tjtn&r=1192" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        Descargar APK
+      </a>
+    </div>
+
+    <!-- Pelis Stream — Play Store io.vungkk.pelistream -->
+    <div class="card" data-cat="app">
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/6_vk3VFFcGqOCCf0u7J6INe_KoHxZRiJkzF6bFRqxFkXWZ8Lx9F6Yg-MjkT_3IM_4Y=s256" alt="Pelis Stream" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🎬</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Pelis Stream</div>
+            <div class="version-badge">v1.28</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
+      </div>
+      <div class="tags"><div class="tag tag-play">Play Store</div></div>
+      <a class="download-btn" href="https://play.google.com/store/apps/details?id=io.vungkk.pelistream" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        Descargar APP
+      </a>
+    </div>
+
+    <!-- PixelPlayer — GitHub -->
+    <div class="card" data-cat="app">
+      <div class="card-header">
+        <img class="card-icon" src="https://raw.githubusercontent.com/theovilardo/PixelPlayer/master/assets/icon.png" alt="PixelPlayer"/>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">PixelPlayer</div>
+            <div class="version-badge">v0.6.0-beta</div>
+          </div>
+          <div class="platform">@theovilardo / Android</div>
+        </div>
+      </div>
+      <div class="tags"><div class="tag tag-git">GitHub</div></div>
+      <div class="btn-row">
+        <a class="download-btn" href="https://github.com/theovilardo/PixelPlayer/releases" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          Descargar APK
+        </a>
+        <a class="download-btn" href="https://github.com/theovilardo/PixelPlayer" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Ver Repo
+        </a>
+      </div>
+    </div>
+
+    <!-- Movidex — Play Store movidex.app2 -->
+    <div class="card" data-cat="app">
+      <div class="card-header">
+        <img class="card-icon" src="https://play-lh.googleusercontent.com/kfOiqoaD2kIYnRdRLjVHXV0kETCTsL1h0FLFMtm6XTxqm5h5_v0-kEeJLX5rlFOCFQ=s256" alt="Movidex" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="card-icon-placeholder" style="display:none">🎞️</div>
+        <div class="card-header-info">
+          <div class="card-top">
+            <div class="card-name">Movidex</div>
+            <div class="version-badge">v1.6</div>
+          </div>
+          <div class="platform">Android</div>
+        </div>
+      </div>
+      <div class="tags"><div class="tag tag-play">Play Store</div></div>
       <a class="download-btn" href="https://play.google.com/store/apps/details?id=movidex.app2" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         Descargar APP
@@ -297,6 +472,6 @@
     Hecho con ♥ por <span>MarrDev</span> — marrcbdev.github.io
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
