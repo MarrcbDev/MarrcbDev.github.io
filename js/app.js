@@ -1,30 +1,17 @@
-document.addEventListener("keyup", e=>{
-    if (e.target.matches("#buscador")){
-        if (e.key == "Escape")e.target.value = "";
-        document.querySelectorAll(".table tbody tr").forEach(app =>{
-            app.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            ?app.classList.remove("filtro")
-            :app.classList.add("filtro")
-        })
+function filter(cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.card');
+      let visible = 0;
+      cards.forEach(card => {
+        const cats = card.dataset.cat || '';
+        if (cat === 'all' || cats.includes(cat)) {
+          card.style.display = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      document.getElementById('count').textContent = visible;
     }
-})
-    
-    
-const texto = "Apps y Juegos Gratis";
-let i = 0;
-
-function escribir(){
-  if(i<texto.length){
-    document.getElementById('escribir').textContent = texto.slice(0, i+1) + "|";
-    i++;
-    setTimeout(escribir, 100);
-  } else {
-    document.getElementById("escribir").textContent = texto;
-  }
-}
-
-setTimeout(escribir, 500);
-
-
-  
-        
