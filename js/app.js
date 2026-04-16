@@ -1,17 +1,15 @@
-function filter(cat) {
-  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+const toggle = document.getElementById('themeToggle');
+    const label  = document.getElementById('theme-label');
+    const html   = document.documentElement;
 
-  const cards = document.querySelectorAll('.card');
-  let visible = 0;
-  cards.forEach(card => {
-    const cats = card.dataset.cat || '';
-    if (cat === 'all' || cats.includes(cat)) {
-      card.style.display = '';
-      visible++;
-    } else {
-      card.style.display = 'none';
-    }
-  });
-  document.getElementById('count').textContent = visible;
-}
+    const saved = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', saved);
+    toggle.checked = saved === 'light';
+    label.textContent = saved === 'light' ? 'Light' : 'Dark';
+
+    toggle.addEventListener('change', () => {
+      const t = toggle.checked ? 'light' : 'dark';
+      html.setAttribute('data-theme', t);
+      localStorage.setItem('theme', t);
+      label.textContent = t === 'light' ? 'Light' : 'Dark';
+    });
